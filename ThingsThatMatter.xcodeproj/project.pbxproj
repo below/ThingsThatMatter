@@ -22,6 +22,7 @@
 		CBBE6BC62AAF77F60047F61B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CBBE6BCD2AAF781A0047F61B /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CBBE6BCF2AAF79400047F61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CBBE6BD02AAF79990047F61B /* ThingsThatMatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThingsThatMatter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		CBBE6BBE2AAF77F40047F61B /* ThingsThatMatter */ = {
 			isa = PBXGroup;
 			children = (
+				CBBE6BD02AAF79990047F61B /* ThingsThatMatter.entitlements */,
 				CBBE6BCF2AAF79400047F61B /* Info.plist */,
 				CBBE6BBF2AAF77F40047F61B /* ThingsThatMatterApp.swift */,
 				CBBE6BCD2AAF781A0047F61B /* HomeView.swift */,
@@ -275,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThingsThatMatter/ThingsThatMatter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThingsThatMatter/Preview Content\"";
@@ -306,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThingsThatMatter/ThingsThatMatter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThingsThatMatter/Preview Content\"";
