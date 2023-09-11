@@ -11,6 +11,7 @@
 		CBBE6BC22AAF77F40047F61B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE6BC12AAF77F40047F61B /* ContentView.swift */; };
 		CBBE6BC42AAF77F60047F61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBE6BC32AAF77F60047F61B /* Assets.xcassets */; };
 		CBBE6BC72AAF77F60047F61B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBE6BC62AAF77F60047F61B /* Preview Assets.xcassets */; };
+		CBBE6BCE2AAF781A0047F61B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE6BCD2AAF781A0047F61B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		CBBE6BC12AAF77F40047F61B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBBE6BC32AAF77F60047F61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBBE6BC62AAF77F60047F61B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBBE6BCD2AAF781A0047F61B /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CBBE6BCF2AAF79400047F61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +54,9 @@
 		CBBE6BBE2AAF77F40047F61B /* ThingsThatMatter */ = {
 			isa = PBXGroup;
 			children = (
+				CBBE6BCF2AAF79400047F61B /* Info.plist */,
 				CBBE6BBF2AAF77F40047F61B /* ThingsThatMatterApp.swift */,
+				CBBE6BCD2AAF781A0047F61B /* HomeView.swift */,
 				CBBE6BC12AAF77F40047F61B /* ContentView.swift */,
 				CBBE6BC32AAF77F60047F61B /* Assets.xcassets */,
 				CBBE6BC52AAF77F60047F61B /* Preview Content */,
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBE6BCE2AAF781A0047F61B /* HomeView.swift in Sources */,
 				CBBE6BC22AAF77F40047F61B /* ContentView.swift in Sources */,
 				CBBE6BC02AAF77F40047F61B /* ThingsThatMatterApp.swift in Sources */,
 			);
@@ -275,6 +281,8 @@
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThingsThatMatter/Info.plist;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "Access HomeKit accessories for Macoun";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +312,8 @@
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThingsThatMatter/Info.plist;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "Access HomeKit accessories for Macoun";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
