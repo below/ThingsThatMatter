@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB6091622AB8E0E000D5E577 /* VBBaseClusters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6091612AB8E0E000D5E577 /* VBBaseClusters.swift */; };
 		CBBE6BC02AAF77F40047F61B /* ThingsThatMatterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE6BBF2AAF77F40047F61B /* ThingsThatMatterApp.swift */; };
 		CBBE6BC22AAF77F40047F61B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE6BC12AAF77F40047F61B /* ContentView.swift */; };
 		CBBE6BC42AAF77F60047F61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBE6BC32AAF77F60047F61B /* Assets.xcassets */; };
 		CBBE6BC72AAF77F60047F61B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBE6BC62AAF77F60047F61B /* Preview Assets.xcassets */; };
 		CBBE6BCE2AAF781A0047F61B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE6BCD2AAF781A0047F61B /* HomeView.swift */; };
+		CBBE6BD22AAFB1580047F61B /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE6BD12AAFB1580047F61B /* DeviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB6091612AB8E0E000D5E577 /* VBBaseClusters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBBaseClusters.swift; sourceTree = "<group>"; };
+		CB6091632AB8F45200D5E577 /* Matter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Matter.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CBBE6BBC2AAF77F40047F61B /* ThingsThatMatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThingsThatMatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBE6BBF2AAF77F40047F61B /* ThingsThatMatterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsThatMatterApp.swift; sourceTree = "<group>"; };
 		CBBE6BC12AAF77F40047F61B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +27,7 @@
 		CBBE6BCD2AAF781A0047F61B /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CBBE6BCF2AAF79400047F61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CBBE6BD02AAF79990047F61B /* ThingsThatMatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThingsThatMatter.entitlements; sourceTree = "<group>"; };
+		CBBE6BD12AAFB1580047F61B /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +64,11 @@
 				CBBE6BCF2AAF79400047F61B /* Info.plist */,
 				CBBE6BBF2AAF77F40047F61B /* ThingsThatMatterApp.swift */,
 				CBBE6BCD2AAF781A0047F61B /* HomeView.swift */,
+				CBBE6BD12AAFB1580047F61B /* DeviceView.swift */,
+				CB6091612AB8E0E000D5E577 /* VBBaseClusters.swift */,
 				CBBE6BC12AAF77F40047F61B /* ContentView.swift */,
 				CBBE6BC32AAF77F60047F61B /* Assets.xcassets */,
+				CB6091632AB8F45200D5E577 /* Matter.playground */,
 				CBBE6BC52AAF77F60047F61B /* Preview Content */,
 			);
 			path = ThingsThatMatter;
@@ -146,6 +154,8 @@
 			files = (
 				CBBE6BCE2AAF781A0047F61B /* HomeView.swift in Sources */,
 				CBBE6BC22AAF77F40047F61B /* ContentView.swift in Sources */,
+				CBBE6BD22AAFB1580047F61B /* DeviceView.swift in Sources */,
+				CB6091622AB8E0E000D5E577 /* VBBaseClusters.swift in Sources */,
 				CBBE6BC02AAF77F40047F61B /* ThingsThatMatterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,7 +171,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -224,7 +234,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;

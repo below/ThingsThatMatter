@@ -31,13 +31,26 @@ struct HomeView: View {
     @StateObject private var homeManager = HomeObserver(homeManager: HMHomeManager())
     
     var body: some View {
+        NavigationView {
         let homes = homeManager.homes
-        List {
-            ForEach(homes, id:\.uniqueIdentifier) { home in
-                Section(home.name) {
-                    ForEach(home.accessories, id:\.uniqueIdentifier) { accessory in
-                        if let matterNodeID = accessory.matterNodeID {
-                            LabeledContent(accessory.name, value: matterNodeID, format: .hex.prefix("0x"))
+            List {
+                ForEach(homes, id:\.uniqueIdentifier) { home in
+                    Section(home.name) {
+                        let matterAccessories = home.accessories.compactMap { accessory -> HMAccessory? in
+                            if accessory.matterNodeID != 0 {
+                                return accessory
+                            } else {
+                                return nil
+                            }
+                        }
+                        ForEach(matterAccessories, id:\.uniqueIdentifier) { accessory in
+                            if let matterNodeID = accessory.matterNodeID {
+                                NavigationLink {
+                                    DeviceView(home: home, accessory: accessory)
+                                } label: {
+                                    LabeledContent(accessory.name, value: matterNodeID, format: .hex.prefix("0x"))
+                                }
+                            }
                         }
                     }
                 }
